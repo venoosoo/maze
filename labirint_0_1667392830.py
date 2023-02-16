@@ -217,7 +217,6 @@ while run:
                 if e.key == K_w and block_p > 0:
                     wood_count += 1
                     block_p -= 1
-                    print(wood_count)
             elif e.type == KEYUP:
                 if e.key == K_LEFT :
                     ball.x_speed = 0
@@ -257,7 +256,6 @@ while run:
             elif e.key == K_DOWN:
                 ball.y_speed = 0
         
-        print(ball.x_speed,ball.y_speed)
         if mouse.get_pressed()[0] and play.rect.collidepoint(mouse.get_pos()):
             playing = True
             tim_e = tm.time()
